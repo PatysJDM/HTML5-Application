@@ -1,0 +1,412 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clic",
+				"clicks"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"s",
+				"selected"
+			],
+			[
+				"ge",
+				"get	Get Elements"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"backr",
+				"background-image"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"di",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.html",
+			"settings":
+			{
+				"buffer_size": 806,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/styles.css",
+			"settings":
+			{
+				"buffer_size": 380,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 265.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"LaTeXTools: Reconfigure and migrate settings",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"help",
+			"texify ?",
+			"texify",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Patys/Documents/Skola/PAA/HTML5"
+	],
+	"file_history":
+	[
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/0_predmluva.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/0_2_abstrakt.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/projekt.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/5_Shrnuti.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/0_0_prohlaseni.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/bibliografie/internet.bib",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/4_navrh_reseni.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/2_moznosti_reseni.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/0_3_zkratky.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/6_vyhodnoceni.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/projekt.bbl",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/5_aplikace.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/1_uvod.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/dokumentace.bbl",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/2_moznosti_reseni.aux",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/0_1_Zkratky.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/1_uvod.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/1_uvod.aux",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/4_Aplikace.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/dokumentace .tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka – kopie/kapitoly/3_cil_prace.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/3_cil_prace.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/0_1_podekovani.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka – kopie/dokumentace.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/dokumentace.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/3_Spartan.tex",
+		"//PATYS-PC/Dokumenty/Škola/TUL/Dokumentace/Projekt/kapitoly/2_FPGA.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/2_FPGA.tex",
+		"/C/Users/Patys/AppData/Roaming/Sublime Text 3/Packages/User/LaTeXTools.sublime-settings",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/titulka.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/0_prohlaseni.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/hlavicka/caption.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/6_Prilohy.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/test.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/fakintest.tex",
+		"/C/Users/Patys/AppData/Roaming/Sublime Text 3/Packages/User/EncodingHelper.sublime-settings",
+		"/C/Users/Patys/AppData/Roaming/Sublime Text 3/Packages/EncodingHelper/EncodingHelper.sublime-settings",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/projekt.sublime-project",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/test.log",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/hlavicka/listings.tex",
+		"/C/Users/Patys/Documents/Dokumentace – kopie (2)/Projekt/titulka.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt-utf8/projekt.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt-utf8/kapitoly/0_1_Zkratky.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt-utf8/kapitoly/0_predmluva.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/projekt.blg",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/bibliografie/internet.bib",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/1_uvod.aux",
+		"/C/Users/Patys/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/builders/traditionalBuilder.py",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/[no file]",
+		"/C/Users/Patys/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Patys/Dropbox/Dokumentace/Projekt/projekt.tex",
+		"/C/Users/Patys/Dropbox/Dokumentace/Projekt/kapitoly/2_FPGA.tex",
+		"/C/Users/Patys/Dropbox/Dokumentace/Projekt/kapitoly/1_uvod.tex",
+		"/C/Users/Patys/Dropbox/Dokumentace/Projekt/titulka.tex",
+		"/C/Users/Patys/Dropbox/Dokumentace/Projekt/kapitoly/3_Spartan.tex",
+		"/C/Users/Patys/Dropbox/Dokumentace/Projekt/projekt.synctex.gz(busy)",
+		"/C/Users/Patys/Dropbox/Dokumentace/rize-prj-8842146dd2c5/kapitoly/2_stavebni_kameny_webu.tex",
+		"/C/Users/Patys/Dropbox/Dokumentace/Bakalarka/kapitoly/1_uvod.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/0_prohlaseni.aux",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/3_cil_prace",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/2_FPGA_2.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/2_FPGA.aux",
+		"/C/Users/Patys/Documents/Dokumentace/rize-prj-8842146dd2c5/bibliografie/internet.bib",
+		"/C/Users/Patys/Documents/Dokumentace/rize-prj-8842146dd2c5/kapitoly/3_zaklady_webu.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/titulka.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/kapitoly/1_uvod",
+		"/C/Users/Patys/Documents/Dokumentace/Projekt/projekt",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/kapitoly/6_zaver.tex",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/titulka.pdf",
+		"/C/Users/Patys/Documents/Dokumentace/Bakalarka/projekt.tex",
+		"/C/Users/Patys/Documents/Dokumentace/rize-prj-8842146dd2c5/projekt.tex",
+		"/C/Users/Patys/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/C/Users/Patys/Documents/Dokumentace/rize-prj-8842146dd2c5/titulka.tex",
+		"/G/Latex/rize-prj-8842146dd2c5/rize-prj-8842146dd2c5/titulka.tex",
+		"/C/Users/Patys/Documents/Dokumentace/rize-prj-8842146dd2c5/kapitoly/0_predmluva.tex",
+		"/G/Latex/rize-prj-8842146dd2c5/rize-prj-8842146dd2c5/hlavicka/makra.tex",
+		"/G/Latex/rize-prj-8842146dd2c5/rize-prj-8842146dd2c5/hlavicka/listings.tex",
+		"/G/Latex/rize-prj-8842146dd2c5/rize-prj-8842146dd2c5/support/sublime/LaTeX.sublime-build",
+		"/G/Latex/rize-prj-8842146dd2c5/rize-prj-8842146dd2c5/projekt.tex",
+		"/G/Latex/rize-prj-8842146dd2c5/rize-prj-8842146dd2c5/hlavicka/caption.tex"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\Patys\\Documents\\Dokumentace\\Projekt"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"klastr",
+			"čern",
+			"Edge",
+			"textb",
+			"textbf",
+			"násled",
+			"Comparison",
+			"Compa",
+			"viz",
+			"pojmenované",
+			"65",
+			"čidl",
+			"čidla",
+			"tul",
+			"konfig",
+			"posunu"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cluster"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 806,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "styles/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 191.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "html5.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

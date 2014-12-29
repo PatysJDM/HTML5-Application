@@ -1,0 +1,150 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) {
+/* Styles */
+
+#scheme{
+	width: 300px;
+	height: 220px; /*height: 240px;*/
+
+}
+
+.overlay {
+	width: 220px; /*width: 345px;*/
+	height: 220px;/*height: 240px;*/
+}
+
+#score{
+	width: 80px; /*width: 115px;*/
+	height: 220px;/*height: 240px;*/
+}
+
+}
+/* iPads ----------- */
+@media only screen 
+and (min-device-width : 800px) {
+/* Styles */
+
+#scheme{
+	width: 780px;
+	height: 410px;
+
+}
+
+.overlay {
+	width: 590px;
+	height: 410px;
+}
+
+#score{
+	width: 190px;
+	height: 410px;
+}
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+#scheme{
+	width: 1200px;
+	height: 630px;
+
+}
+
+.overlay {
+	width: 900px;
+	height: 630px;
+}
+
+#score{
+	width: 165px;
+	height: 630px;
+
+}
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
+body{
+
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+
+
+
+.overlay {
+	background-image: url("../img/cat.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	float:left;
+}
+.overlay .cover{
+	width: 10%;
+	height: 10%;
+	background-color: #34d0ab;
+	display: inline-block;
+	float: left;
+	opacity: 1;
+	-webkit-transition: visibility 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  	-moz-transition: visibility 0.75s ease-in-out, opacity 0.75s ease-in-out;
+  	-o-transition: visibility 0.75s ease-in-out, opacity 0.75s ease-in-out;
+	transition: visibility 0.75s ease-in-out, opacity 0.75s ease-in-out;
+}
+
+#score{
+	background-color: #ff8f40;
+	vertical-align: middle;
+	border-radius: 4px;
+	float: left;
+}
+
+#counter{
+	padding-left: 15px; 
+	width: 120px;
+}
+
+#level{
+	padding-left: 15px; 
+	width: 120px;
+}
+
+#form_answer{
+	width: 135px;
+	padding-left: 15px;  
+}
+
+#sub{
+	font-family: verdana,helvetica,arial,sans-serif;
+	padding: 6px 10px;	
+	font-size: 12px;
+	width: 135px;
+	border-radius: 4px;
+	color: #000;
+	background-color: #34d0ab;
+	border: none;
+}
+
+#answer{
+	border: none;
+	height: 25px;
+	width: 130px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+
+}
+
