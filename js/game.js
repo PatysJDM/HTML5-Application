@@ -11,49 +11,51 @@ answers = {
 "lama.jpg" : ["lama"],
 "lemur.jpg" : ["lemur", "král Jelimán", "kral Jeliman"]
 }
-pictures = Object.keys(answers);
-current = pictures[0];
+pictures = Object.keys(answers); // Pole názvů všech obrázků, které mohou být na pozadí
+current = pictures[0]; // Aktuální obrázek nastavený na pozadí
 
+/* Funkce pro nastavení výšky body podle velikosti okna */ 
 var setWindowHeight = function setWindowHeightF(){
     var windowHeight = window.innerHeight;
-    windowHeight = Math.floor(windowHeight/10)*10;
-
+    windowHeight = Math.floor(windowHeight/10)*10;	// Výška musí být dělitelná 10, aby nezbylo nezakrytý proužek obrázku
     document.body.style.height = windowHeight + "px";
-    console.log(document.body.style.height);
+    // console.log(document.body.style.height);
 }
-window.addEventListener("resize",setWindowHeight,false);
+window.addEventListener("resize",setWindowHeight,false); // Při změně velikosti okna se znovu nastaví výška body
 
-setWindowHeight();
+setWindowHeight();	// Nastavení výšky body
+counter.innerHTML = "Score: " + vscore;	// Zobrazení počátečního skóre (10)
+level.innerHTML = "Level: " + (correct + 1); // Zobrazení počátečního levelu
 
+/* Funkce, která se provede po kliknutí na překrývající políčko */
 var clickHandler = function clickF (){
-	if (vscore > 0) vscore--;
-	this.style.opacity=0;
-	this.style.visibility="hidden";
-	counter.innerHTML = "Score: " + vscore;
+	if (vscore > 0) vscore--;	// Skóre se o jedna zmenší, pokud je větší než 0
+	this.style.opacity = 0;		// Průhlednost překrývacího divu se nastaví na 0 - zcela průhledný
+	this.style.visibility = "hidden"; // Překrývací div již nebude viditelný a nepůjde na něj kliknout
+	counter.innerHTML = "Score: " + vscore;	// Aktualizace skóre
 }
-counter.innerHTML = "Score: " + vscore;
-level.innerHTML = "Level: " + (correct + 1);
 
+/* Vytvoření matice divů (10x10), která překrývá obrázek na pozadí */
 for (var i = 0; i < 100; i++) {
 	var cover = document.createElement("div");
 	cover.className = "cover";
 	cover.addEventListener('click', clickHandler, false);
-
 	overlay.appendChild(cover);		
 };
 
+/* Funkce, která se provede po stistknutí tlačítka submit */
 document.forms["submit_form"].onsubmit = function(){
 	var answer_in, answer, overlay;
 	overlay 		= document.getElementsByClassName("overlay");
 	answer_in 		= document.getElementById('answer');
 	answer 			= answer_in.value;							// Načtení odpovědi z inputu
-	answer_in.value = "";											// Vymazání inputu pro zadání odpovědi
+	answer_in.value = "";										// Vymazání inputu pro zadání odpovědi
 
 	// Kontrola odpovědi
 	if (answers[current].indexOf(answer) != -1){
-		correct++;
+		correct++; // Počet správně zodpovězených obrázků
 
-		removeCover();
+		removeCover();	// Odhalení celého obrázku
 		// Po odkrytí obrázku je zpoždění 2s, následně je opět překrytý a až po 1s je nastaven další obrázek na pozadí
 		setTimeout(function(){
 			if (correct < pictures.length){
@@ -68,27 +70,28 @@ document.forms["submit_form"].onsubmit = function(){
 			}
 		}, 2000);
 	} 
-	
 
 	return false; // aby nedošlo k reloadu stránky
 }
 
+/* Funkce, která obrázek znovu zakrývá */ 
 var addCover = function addCoverF (){
-	var covers = document.getElementsByClassName("cover");
-	console.log("covers: " + covers.length);
+	var covers = document.getElementsByClassName("cover"); // Nalezení všech elementů s třídou cover
+	// console.log("covers: " + covers.length);
 
-	for (var i = 0; i<covers.length; i++){
-		covers[i].style.visibility="visible";
-		covers[i].style.opacity=1;
+	for (var i = 0; i < covers.length; i++){
+		covers[i].style.visibility = "visible"; // Překrytí je opět viditelné a neprůhledné
+		covers[i].style.opacity = 1;
 	}
 }
 
+/* Funkce pro odhalení celého obrázku */ 
 var removeCover = function removeCoverF (){
-	var covers = document.getElementsByClassName("cover");
-	console.log("covers: " + covers.length);
+	var covers = document.getElementsByClassName("cover"); // Nalezení všech elementů s třídou cover
+	// console.log("covers: " + covers.length);
 
-	for (var i = 0; i<covers.length; i++){
-		covers[i].style.visibility="hidden";
-		covers[i].style.opacity=0;
+	for (var i = 0; i < covers.length; i++){
+		covers[i].style.visibility = "hidden"; // Překrytí je neviditelné a průhledné
+		covers[i].style.opacity = 0;
 	}
 }
