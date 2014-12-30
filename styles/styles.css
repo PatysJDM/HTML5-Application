@@ -5,15 +5,11 @@ body{
 }
 
 #scheme{
-	/*width: 665px;*/
-	/*height: 350px;*/
 	width: 100%;
 	height: 100%;
 }
 
 .overlay {
-	/*width: 500px;*/
-	/*height: 350px;*/
 	width: 80%;
 	height: 100%;
 	background-image: url("../img/cat.jpg");
@@ -35,49 +31,83 @@ body{
 }
 
 #score{
-	/*width: 165px;*/
-	/*height: 350px;*/
 	width: 20%;
 	height: 100%;
 	background-color: #ff8f40;
 	vertical-align: middle;
 	border-radius: 4px;
 	float: left;
+	text-align: center;
 }
 
 #counter{
-	padding-left: 15px; 
-	width: 120px;
+	width: 80%;
 	display: inline-block;
+	text-align: center;
 }
 
 #level{
-	padding-left: 15px; 
-	width: 120px;
+	width: 80%;
+	display: inline-block;
+	text-align: center;
 }
 
 #form_answer{
-	width: 135px;
-	padding-left: 15px;  
+	width: 80%;
+	padding-top: 15px; 
+	display: inline-block;
+	text-align: center; 
 }
 
 #sub{
 	font-family: verdana,helvetica,arial,sans-serif;
 	padding: 6px 10px;	
-	font-size: 12px;
-	width: 135px;
+	font-size: 1em;
+	width: 80%;
 	border-radius: 4px;
 	color: #000;
 	background-color: #34d0ab;
 	border: none;
+	cursor: pointer;
 }
 
 #answer{
 	border: none;
 	height: 25px;
-	width: 130px;
-	padding-left: 5px;
+	font-size: 1em;
+	text-align: center;
+	width: 80%;
 	margin-bottom: 10px;
-
 }
 
+#divScore{
+	visibility: hidden;
+	position: absolute;
+    top: 50%;  /* pozice horní hrany bude na středu rodičovského prvku */
+    left: 50%; /* pozice levé hrany bude na středu rodičovského prvku  */
+    transform: translate(-50%, -50%); /* translateX(-50%) a translateY(-50%) - posunutí, aby byl prvek vycentrovaný */
+	width: 70%;
+	height: 70%;
+	max-width: 400px;
+	max-height: 220px;
+	background-color: #ff8f40;
+	box-shadow: 0em 0em 1em black;
+	text-align: center;
+}
+
+#yourScore{
+	font-size: 1.5em;
+}
+
+#newGame{
+	font-family: verdana,helvetica,arial,sans-serif;
+	padding: 6px 10px;	
+	font-size: 1em;
+	width: 30%;
+	border-radius: 4px;
+	color: #000;
+	background-color: #34d0ab;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+}

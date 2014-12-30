@@ -1,9 +1,13 @@
-var vscore, counter, overlay, correct, answers, pictures, current;
-vscore 	= 10; 
-counter = document.getElementById("counter");
-overlay = document.querySelector(".overlay");
-correct = 0;
-answers = {
+var vscore, counter, overlay, correct, answers, pictures, current, scheme, divScore, yourScore, newGame;
+vscore 		= 10; 
+counter 	= document.getElementById("counter");
+overlay 	= document.querySelector(".overlay");
+scheme 		= document.getElementById("scheme");
+divScore 	= document.getElementById("divScore");
+yourScore 	= document.getElementById("yourScore");
+newGame 	= document.getElementById("newGame");
+correct 	= 0;
+answers 	= {
 "cat.jpg" 	: ["kocka", "kočka", "kočička", "kocicka", "cat"],
 "dog.jpg" 	: ["pes", "pejsek", "dog"],
 "komar.jpg" : ["komar", "komár", "mosquito"],
@@ -21,14 +25,15 @@ var setWindowHeight = function setWindowHeightF(){
     document.body.style.height = windowHeight + "px";
     // console.log(document.body.style.height);
 }
-window.addEventListener("resize",setWindowHeight,false); // Při změně velikosti okna se znovu nastaví výška body
+window.addEventListener('resize',setWindowHeight,false); // Při změně velikosti okna se znovu nastaví výška body
+newGame.addEventListener('click', function(){window.location.reload();}, false); // Při kliknutí na New game se stránka znovu načte 
 
 setWindowHeight();	// Nastavení výšky body
 counter.innerHTML = "Score: " + vscore;	// Zobrazení počátečního skóre (10)
 level.innerHTML = "Level: " + (correct + 1); // Zobrazení počátečního levelu
 
 /* Funkce, která se provede po kliknutí na překrývající políčko */
-var clickHandler = function clickF (){
+var clickHandler = function clickF(){
 	if (vscore > 0) vscore--;	// Skóre se o jedna zmenší, pokud je větší než 0
 	this.style.opacity = 0;		// Průhlednost překrývacího divu se nastaví na 0 - zcela průhledný
 	this.style.visibility = "hidden"; // Překrývací div již nebude viditelný a nepůjde na něj kliknout
@@ -67,6 +72,8 @@ document.forms["submit_form"].onsubmit = function(){
 					vscore = vscore + 10;
 					counter.innerHTML = "Score: " + vscore;
 				}, 1000);
+			}else{
+				showScore();
 			}
 		}, 2000);
 	} 
@@ -75,7 +82,7 @@ document.forms["submit_form"].onsubmit = function(){
 }
 
 /* Funkce, která obrázek znovu zakrývá */ 
-var addCover = function addCoverF (){
+var addCover = function addCoverF(){
 	var covers = document.getElementsByClassName("cover"); // Nalezení všech elementů s třídou cover
 	// console.log("covers: " + covers.length);
 
@@ -86,7 +93,7 @@ var addCover = function addCoverF (){
 }
 
 /* Funkce pro odhalení celého obrázku */ 
-var removeCover = function removeCoverF (){
+var removeCover = function removeCoverF(){
 	var covers = document.getElementsByClassName("cover"); // Nalezení všech elementů s třídou cover
 	// console.log("covers: " + covers.length);
 
@@ -94,4 +101,10 @@ var removeCover = function removeCoverF (){
 		covers[i].style.visibility = "hidden"; // Překrytí je neviditelné a průhledné
 		covers[i].style.opacity = 0;
 	}
+}
+
+/* Funkce, která zobrazí skóre na konci hry */
+var showScore = function showScoreF(){
+	divScore.style.visibility = "visible";
+	yourScore.innerHTML = "Your score: " + vscore;
 }
