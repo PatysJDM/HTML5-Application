@@ -111,3 +111,33 @@ body{
 	display: inline-block;
 	cursor: pointer;
 }
+
+#divIntro{
+	visibility: visible;
+	position: absolute;
+    top: 50%;  /* pozice horní hrany bude na středu rodičovského prvku */
+    left: 50%; /* pozice levé hrany bude na středu rodičovského prvku  */
+    transform: translate(-50%, -50%); /* translateX(-50%) a translateY(-50%) - posunutí, aby byl prvek vycentrovaný */
+	width: 70%;
+	height: 70%;
+	font-size: 0.8em;
+	max-width: 600px;
+	max-height: 150px;
+	padding: 10px;
+	background-color: #ff8f40;
+	box-shadow: 0em 0em 1em black;
+	text-align: center;
+}
+
+#playGame{
+	font-family: verdana,helvetica,arial,sans-serif;
+	padding: 6px 10px;	
+	width: 30%;
+	border-radius: 4px;
+	font-size: 1em;
+	color: #000;
+	background-color: #34d0ab;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+}

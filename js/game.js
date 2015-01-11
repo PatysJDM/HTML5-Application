@@ -1,4 +1,4 @@
-var vscore, counter, overlay, correct, answers, pictures, current, scheme, divScore, yourScore, newGame;
+var vscore, counter, overlay, correct, answers, pictures, current, scheme, divScore, yourScore, newGame, divIntro, playGame;
 vscore 		= 10; 
 counter 	= document.getElementById("counter");
 overlay 	= document.querySelector(".overlay");
@@ -6,14 +6,16 @@ scheme 		= document.getElementById("scheme");
 divScore 	= document.getElementById("divScore");
 yourScore 	= document.getElementById("yourScore");
 newGame 	= document.getElementById("newGame");
+divIntro	= document.getElementById("divIntro");
+playGame	= document.getElementById("playGame");
 correct 	= 0;
 answers 	= {
 "cat.jpg" 	: ["kocka", "kočka", "kočička", "kocicka", "cat"],
-"dog.jpg" 	: ["pes", "pejsek", "dog"],
+"dog.jpg" 	: ["pes", "pejsek", "dog"]/*,
 "komar.jpg" : ["komar", "komár", "mosquito"],
 "lachtan.jpg" : ["lachtan"],
 "lama.jpg" : ["lama"],
-"lemur.jpg" : ["lemur", "král Jelimán", "kral Jeliman"]
+"lemur.jpg" : ["lemur", "král Jelimán", "kral Jeliman"]*/
 }
 pictures = Object.keys(answers); // Pole názvů všech obrázků, které mohou být na pozadí
 current = pictures[0]; // Aktuální obrázek nastavený na pozadí
@@ -26,10 +28,11 @@ var setWindowHeight = function setWindowHeightF(){
     // console.log(document.body.style.height);
 }
 window.addEventListener('resize',setWindowHeight,false); // Při změně velikosti okna se znovu nastaví výška body
+playGame.addEventListener('click', function(){divIntro.style.visibility = "hidden";}, false); // Při kliknutí na Nová hra se skryjí informace o hře 
 newGame.addEventListener('click', function(){window.location.reload();}, false); // Při kliknutí na New game se stránka znovu načte 
 
 setWindowHeight();	// Nastavení výšky body
-counter.innerHTML = "Score: " + vscore;	// Zobrazení počátečního skóre (10)
+counter.innerHTML = "Skóre: " + vscore;	// Zobrazení počátečního skóre (10)
 level.innerHTML = "Level: " + (correct + 1); // Zobrazení počátečního levelu
 
 /* Funkce, která se provede po kliknutí na překrývající políčko */
@@ -37,7 +40,7 @@ var clickHandler = function clickF(){
 	if (vscore > 0) vscore--;	// Skóre se o jedna zmenší, pokud je větší než 0
 	this.style.opacity = 0;		// Průhlednost překrývacího divu se nastaví na 0 - zcela průhledný
 	this.style.visibility = "hidden"; // Překrývací div již nebude viditelný a nepůjde na něj kliknout
-	counter.innerHTML = "Score: " + vscore;	// Aktualizace skóre
+	counter.innerHTML = "Skóre: " + vscore;	// Aktualizace skóre
 }
 
 /* Vytvoření matice divů (10x10), která překrývá obrázek na pozadí */
@@ -70,7 +73,7 @@ document.forms["submit_form"].onsubmit = function(){
 					overlay[0].style.backgroundImage = "url('img/" + current + "')"
 					level.innerHTML = "Level: " + (correct + 1);
 					vscore = vscore + 10;
-					counter.innerHTML = "Score: " + vscore;
+					counter.innerHTML = "Skóre: " + vscore;
 				}, 1000);
 			}else{
 				showScore();
@@ -106,5 +109,6 @@ var removeCover = function removeCoverF(){
 /* Funkce, která zobrazí skóre na konci hry */
 var showScore = function showScoreF(){
 	divScore.style.visibility = "visible";
-	yourScore.innerHTML = "Your score: " + vscore;
+	yourScore.innerHTML = "Celkové skóre: " + vscore;
 }
+
